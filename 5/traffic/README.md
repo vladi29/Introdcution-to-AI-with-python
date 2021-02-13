@@ -1,0 +1,4 @@
+First I used teh same neural network in handwriting.py, but it didn't work until I changed the amount of neurons in hidden layer to multiple of NUM_CATEGORIES
+I made multiple attempts until I saw that the better performance was producted by a neural network with less filters (I started with 32 and finised with 8) in conv layer, a pool with 2x2 size and three hidden layers with dropout of 0.2 each ones and 40, 20 and 10 neurons respectively.
+The more neurons added, the longer the code took
+* One conv layer with 10 filters, one pooling layer with pool 2x2, one flatten units, three hidden layers with 40 neurons and dropout of 0.2 and 20 neurons and dropout of 0.2 and 10 neurons and dropout of 0.2 with accuracy=0.9306
